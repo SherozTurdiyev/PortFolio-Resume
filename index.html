@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+    <div class="slider">
+        <div class="slider__wrapper">
+            <div class="slider__content">
+                <img id="img1"  class="img  block" src="./image/night.jpg" alt="NO_IMG">
+                <img id="img2"  class="img " src="./image/Yashilfon.jpeg" alt="NO_IMG">
+                <img id="img3"  class="img " src="./image/night2.jpg" alt="NO_IMG">
+                <img  id="img4" class="img " src="./image/chile-patagonia-nature.jpg" alt="NO_IMG">
+
+            </div>
+
+        </div>
+        <div class="controller">
+            <button class="no_active" id="btn__1" onclick="slider(event, 'img1')">1</button>
+            <button class="no_active" id="btn__2"  onclick="slider(event, 'img2')">2</button>
+            <button class="no_active" id="btn__3"  onclick="slider(event, 'img3')">3</button>
+            <button class="no_active" id="btn__4"  onclick="slider(event, 'img4')">4</button>
+        </div>
+    </div>
+
+
+
+
+                      <!-- Slider 2 -->
+
+ <div class="slider__wrapper-2">
+     <div class="slider__content-2">
+         <img class="slider__img" id="slider__img1" src="./image/chile-patagonia-nature.jpg" alt="">
+         <img class="slider__img" id="slider__img2" src="./image/nc-snapshot1590395885806.jpg" alt="">
+         <img class="slider__img" id="slider__img3" src="./image/night.jpg" alt="">
+         <img class="slider__img" id="slider__img4" src="./image/night2.jpg" alt="">
+
+    
+     </div>
+
+     <div class="controller_2">
+        <img class="ctn__img" id="ctn_1" onclick="slider__2(event, 'slider__img1')" src="./image/chile-patagonia-nature.jpg" alt="">
+        <img class="ctn__img" id="ctn_2" onclick="slider__2(event, 'slider__img2')" src="./image/nc-snapshot1590395885806.jpg" alt="">
+        <img class="ctn__img" id="ctn_3" onclick="slider__2(event, 'slider__img3')" src="./image/night.jpg" alt="">
+        <img class="ctn__img" id="ctn_4" onclick="slider__2(event, 'slider__img4')" src="./image/night2.jpg" alt="">
+     </div>
+ </div>
+
+
+
+
+
+
+</div>
+
+    <script src="./app.js "></script>
+</body>
+
+</html>
