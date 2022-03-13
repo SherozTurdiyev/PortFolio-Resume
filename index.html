@@ -5,64 +5,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS Style/style.css">
+    <link rel="stylesheet" href="./CSS Style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS Style/homePage.css">
+    <link rel="stylesheet" href="/CSS Style/aboutPage.css">
+    <link rel="stylesheet" href="/CSS Style/contactPage.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="loader">
+        <div class="ring"></div>
+    </div>
+  
 
 
-    <div class="container">
-    <div class="slider">
-        <div class="slider__wrapper">
-            <div class="slider__content">
-                <img id="img1"  class="img  block" src="./image/night.jpg" alt="NO_IMG">
-                <img id="img2"  class="img " src="./image/Yashilfon.jpeg" alt="NO_IMG">
-                <img id="img3"  class="img " src="./image/night2.jpg" alt="NO_IMG">
-                <img  id="img4" class="img " src="./image/chile-patagonia-nature.jpg" alt="NO_IMG">
+
+    <div id="box" class="boxing">
+        <div class="left" id="menu__open">
+            <div class="userImg">
+                <!-- <h2>Sheroz Turdiyev</h2> -->
+            </div>
+            <nav>
+                <ul>
+                    <li class="tablinks" id="defaultOpen" onclick="openPage(event, 'home')">Home</li>
+                    <li class="tablinks" onclick="openPage(event, 'about__page')">About Me</li>
+                    <li class="tablinks" onclick="openPage(event, 'resume__page')">Resume</li>
+                    <li class="tablinks" onclick="openPage(event, 'Portfolio__page')">Portfolio</li>
+                    <li class="tablinks" onclick="openPage(event, 'blog__page')">Blog</li>
+                    <li class="tablinks" onclick="openPage(event, 'contact__page')">Contact</li>
+                </ul>
+            </nav>
+
+            <div class="footer">
+                <div class="footert__icons">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-telegram"></i>
+                    <i class="fas fa-basketball-ball"></i>
+                </div>
+                <div class="footertext">
+                    <p> 2021 © Cosmos-Themes. <br>
+                        All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="mobil">
+                <div   class="menu__icons">
+                    <i id="divIcons"onclick="menuOpen()" class="fas fa-bars"></i>
+                    <i id="xIcons" onclick="menuClose()"  class="fas fa-times"></i>
+
+                </div>
+            </div>
+            <div id="home" class="home tabcontent">
+                <p class="name">
+                    Turdiyev Sheroz
+                </p>
+                <div class="typed">
+                    <p class="i">I am </p>
+
+                    <p id="typed" class="element"></p>
+                </div>
+
+            </div>
+
+            <div id="about__page" class="about__page tabcontent ">
+                <div class="container">
+                    <div class="about__text">
+                        <p>About Me</p>
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="box">
+                        <div class="about__skills">
+                            <h2>UI/UX Designer & Developer</h2>
+                            <p>Dolor reprehenderit aut repudiandae maiores recusandae. Consequatur dolor nisi labore
+                                commodi ipsa? Excepturi velit laboriosam at voluptatibus cupiditate est vel. Dolorem
+                                praesentium itaque fugiat placeat quas consequatur? Obcaecati natus rerum
+
+                                Consectetur consectetur nesciunt nesciunt blanditiis amet? Quod quis unde aliquid
+                                excepturi laudantium? Illo architecto aliquam velit illo magnam neque perferendis sint
+                                Incidunt eius ipsa inventore labore eos velit. Minus hic magni reiciendis necessitatibus
+                                ex Quidem officia deleniti accusamus obcaecati dolores. Porro culpa quibusdam impedit
+                                porro praesentium excepturi. Alias ab consequatur?</p>
+                        </div>
+                        <div class="about__personal">
+                            <h2>Personal Information</h2>
+                            <div class="personal__info">
+                                <table>
+                                    <tr>
+                                        <th>Surname:</th>
+                                        <td>Turdiyev</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Name:</th>
+                                        <td>Sheroz</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Age:</th>
+                                        <td>22</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Residence:</th>
+                                        <td>Uzbelistan, Navoiy</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email:</th>
+                                        <td>SherozTurdiyev95@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone Number:</th>
+                                        <td>+998939542111</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Freelance:</th>
+                                        <td>Available</td>
+                                    </tr>
+                                </table>
+                                <button>DOWNLOAD RESUME</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="About__services">
+                        <h2>SERVICES</h2>
+                        <div class="about__icons">
+                            <div class="about__box">
+                                <i class="fas fa-laptop"></i>
+                                <p>Web Development</p>
+                            </div>
+                            <div class="about__box">
+                                <i class="far fa-eye"></i>
+                                <p>Web Design</p>
+                            </div>
+                            <div class="about__box">
+                                <i class="fas fa-laptop"></i>
+                                <p>Responsive Design</p>
+                            </div>
+                            <div class="about__box">
+                                <i class="fas fa-camera"></i>
+                                <p>Photography</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div id="resume__page" class="resume__page tabcontent">
+
+            </div>
+            <div id="Portfolio__page" class="Portfolio__page  tabcontent">
+
+            </div>
+            <div id="blog__page" class="blog__page  tabcontent">
+
+            </div>
+            <div id="contact__page" class="contact__page  tabcontent">
+                <div class="container">
+                    <div class="contact__text">
+                        <p>Contact Me</p>
+                        <i class="far fa-user"></i>
+                    </div>
+                    <h2>LET'S TALK</h2>
+                    <div class="inp">
+                        <div class="Contact__input">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="comment">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Can you Help me?"></textarea>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="contact__btn">
+                        <button>SEND MASSEGE</button>
+                    </div>
+                    <div class="contact__me">
+                        <div class="box">
+                             <i class="fab fa-telegram-plane"></i>
+                             <h3>example@example.com</h3>
+                        </div>
+                        <div class="box">
+                            <i class="fab fa-telegram-plane"></i>
+                            <h3>example@example.com</h3>
+                       </div>
+                       <div class="box">
+                        <i class="fab fa-telegram-plane"></i>
+                        <h3>example@example.com</h3>
+                   </div>
+                       
+                    </div>
+                </div>
 
             </div>
 
         </div>
-        <div class="controller">
-            <button class="no_active" id="btn__1" onclick="slider(event, 'img1')">1</button>
-            <button class="no_active" id="btn__2"  onclick="slider(event, 'img2')">2</button>
-            <button class="no_active" id="btn__3"  onclick="slider(event, 'img3')">3</button>
-            <button class="no_active" id="btn__4"  onclick="slider(event, 'img4')">4</button>
-        </div>
     </div>
+    <script src="./js/typed.js"></script>
+    <script src="./js/app.js "></script>
 
-
-
-
-                      <!-- Slider 2 -->
-
- <div class="slider__wrapper-2">
-     <div class="slider__content-2">
-         <img class="slider__img" id="slider__img1" src="./image/chile-patagonia-nature.jpg" alt="">
-         <img class="slider__img" id="slider__img2" src="./image/nc-snapshot1590395885806.jpg" alt="">
-         <img class="slider__img" id="slider__img3" src="./image/night.jpg" alt="">
-         <img class="slider__img" id="slider__img4" src="./image/night2.jpg" alt="">
-
-    
-     </div>
-
-     <div class="controller_2">
-        <img class="ctn__img" id="ctn_1" onclick="slider__2(event, 'slider__img1')" src="./image/chile-patagonia-nature.jpg" alt="">
-        <img class="ctn__img" id="ctn_2" onclick="slider__2(event, 'slider__img2')" src="./image/nc-snapshot1590395885806.jpg" alt="">
-        <img class="ctn__img" id="ctn_3" onclick="slider__2(event, 'slider__img3')" src="./image/night.jpg" alt="">
-        <img class="ctn__img" id="ctn_4" onclick="slider__2(event, 'slider__img4')" src="./image/night2.jpg" alt="">
-     </div>
- </div>
-
-
-
-
-
-
-</div>
-
-    <script src="./app.js "></script>
 </body>
 
 </html>

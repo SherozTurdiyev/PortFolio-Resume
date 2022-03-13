@@ -1,0 +1,100 @@
+
+/* o'ng tomonda About__page qismi */
+.container{
+    width: 80%;
+    margin: auto;  
+  }
+  .about__page{
+      width: 100%;
+      height: 100vh;
+      background-color: black; 
+      color: white; 
+      display: none;   
+  }
+  
+  .about__text{
+      color: #00A3E1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px 0 0 0;
+      font-size: 30px;
+      border-bottom: 2px dashed ;
+  }
+  .about__page .box{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+  
+  .about__skills{
+      width: 60%;
+      padding: 0 20px;
+  }
+  .about__personal{
+      width: 40%;
+      height: auto;
+  }
+  .about__skills p{
+      line-height: 21px; 
+      padding-top: 15px;
+  }
+  table{
+      text-align: left;
+      margin: 15px 0;
+  }
+  
+  tr, th, td{
+      padding: 5px;
+  }
+  th{
+      border-bottom:2px solid #00A3E1;
+  }
+  .About__services{
+      text-align: center;
+  
+  }
+  .about__box{
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+  }
+  .about__icons{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items:center;
+  
+  }
+  .about__icons i{
+     
+      font-size: 45px;
+      color: #00A3E1;
+      padding-bottom: 10px; ;
+  }
+  .about__icons p{
+      font-size: 25px;
+  }
+  .about__icons span{
+      font-size: 16px;
+      line-height: 18px;
+      transition: 0.5s;
+  }
+  
+  .about__page button{
+      padding: 10px 20px;
+      border: 2px solid #00A3E1;
+      background: none;
+      color: #00A3E1;
+      
+  }
+  
+  .about__page button:hover{
+      background-color:#00A3E1 ;
+      color: white;
+  }
+  

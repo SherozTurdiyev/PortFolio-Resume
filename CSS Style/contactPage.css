@@ -1,0 +1,152 @@
+
+/* Contact page */
+
+h2{
+    text-align: center;
+    padding: 50px;
+}
+
+.Contact__input{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 250px;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: 1px solid white;
+    outline: none;
+
+}
+
+.comment{
+    text-align: center; 
+}
+
+textarea{
+    width: 60%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid white;    
+}
+
+::placeholder {
+    color: white;
+    font-size: 18px;
+    opacity: 1; 
+  }
+.contact__btn{
+    text-align: center;
+    margin-top: 25px;
+}
+  .contact__btn button{
+      padding: 10px 20px;
+      border: 2px solid #00A3E1;
+      background: none;
+      color: #00A3E1;
+      
+  }
+
+  .contact__btn button:hover{
+      background-color:#00A3E1 ;
+      color: white;
+  }
+  .contact__text{
+    color: #00A3E1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0 10px 0;
+    font-size: 30px;
+    border-bottom: 2px dashed ;
+}
+.contact__page .contact__me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact__me .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 50px;
+}
+
+.contact__me i{
+    color: #00A3E1;
+    font-size: 55px;
+    padding-bottom: 10px;
+}
+.contact__me h2{
+    color: white;
+}
+
+
+
+
+@media (min-width: 1025px) {
+    /* laptops */
+    .mobil {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+  }
+  
+  @media (max-width: 767px) {
+    /* PHONE */
+       
+ .Contact__input {
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact__text {
+    color: #00a3e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    font-size: 30px;
+    border-bottom: 2px dashed;
+  }
+  input{
+    width: 100%;
+  }
+
+
+  .comment{
+    width: 100%;
+  }
+
+  textarea{
+      width: 100%;
+  }
+
+  .contact__page .contact__me{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+
+
+}
+
