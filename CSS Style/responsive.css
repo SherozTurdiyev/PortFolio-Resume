@@ -5,37 +5,70 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* tablet */
-}
+/* @media (min-width: 768px) and (max-width: 1024px) {
+   tablet 
+ }  */
 
 @media (max-width: 767px) {
   /* PHONE */
 
   .left {
-    width: 200px;
+    width: 250px;
     position: absolute;
-    transform: translateX(-400px);
     transition: 0.5s;
+    background-color:black;
+    z-index: 15;
   }
   .right {
     width: 100%;
   }
   .mobil {
+    width: 100%;
+    height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: end;
-    background: transparent;
-    position: absolute;
+    position: fixed;
+    top: 0;
     right: 0;
+    z-index: 0;
+  }
+  .menu__icons{
+    text-align: right;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu__icons div{
+    width: 40px;
+    height: 7px;
+    margin-top: 7px;
+    background-color: gray;
+    transition: 0.5s;
+  }
+  .bir_x{
+    transform: rotate(40deg)
+    translateY(9px);
+  }
+  .ikki_x{
+    transform: rotate(-40deg)
+    translateY(-9px);
   }
 
-  .accttive {
-    transform: translateX(0);
+  .menu__open__active{
+    transform: translate(0);
   }
-  #xIcons {
-    display: none;
+
+  .menu__open__noActive{
+    transform: translate(-400px);
   }
+
+  .black{
+    background-color:black;  }
+    .transparent{
+      background:transparent;
+    }
   .menu__icons i {
     width: 30px;
     transition: 0.8s;
@@ -112,5 +145,30 @@
   .comment{
     width: 100%;
   }
- 
+
+  .about__page .box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__skills{
+  width: 100%;
+}
+.about__personal{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+ /* .about__icons{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+ } */
+ br{
+   margin:10px;
+ }
 }

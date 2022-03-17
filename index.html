@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS Style/style.css">
-    <link rel="stylesheet" href="./CSS Style/responsive.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/CSS Style/homePage.css">
-    <link rel="stylesheet" href="/CSS Style/aboutPage.css">
-    <link rel="stylesheet" href="/CSS Style/contactPage.css">
+    <link rel="stylesheet" href="CSS Style/homePage.css">
+    <link rel="stylesheet" href="CSS Style/aboutPage.css">
+    <link rel="stylesheet" href="CSS Style/contactPage.css">
+        <link rel="stylesheet" href="./CSS Style/responsive.css">
     <title>Document</title>
 </head>
 
@@ -25,7 +26,7 @@
 
 
     <div id="box" class="boxing">
-        <div class="left" id="menu__open">
+        <div class="left menu__open__noActive" id="menu__open">
             <div class="userImg">
                 <!-- <h2>Sheroz Turdiyev</h2> -->
             </div>
@@ -56,13 +57,16 @@
         </div>
 
         <div class="right">
-            <div class="mobil">
-                <div   class="menu__icons">
-                    <i id="divIcons"onclick="menuOpen()" class="fas fa-bars"></i>
-                    <i id="xIcons" onclick="menuClose()"  class="fas fa-times"></i>
-
+            <div class="mobil black">
+                <h1 style="margin-right: 80px;">Turdiyev Sheroz</h1>
+                <div   class="menu__icons " onclick="menuOpen()">
+                    <!-- <i id="divIcons"onclick="menuOpen()" class="fas fa-bars"></i>
+                    <i id="xIcons" onclick="menuClose()"  class="fas fa-times"></i> -->
+                    <div class="bir"></div>
+                    <div class="ikki"></div>
                 </div>
             </div>
+
             <div id="home" class="home tabcontent">
                 <p class="name">
                     Turdiyev Sheroz
@@ -138,7 +142,7 @@
                             <div class="about__box">
                                 <i class="fas fa-laptop"></i>
                                 <p>Web Development</p>
-                            </div>
+                            </div> <br>
                             <div class="about__box">
                                 <i class="far fa-eye"></i>
                                 <p>Web Design</p>
@@ -146,7 +150,7 @@
                             <div class="about__box">
                                 <i class="fas fa-laptop"></i>
                                 <p>Responsive Design</p>
-                            </div>
+                            </div> <br>
                             <div class="about__box">
                                 <i class="fas fa-camera"></i>
                                 <p>Photography</p>
@@ -163,7 +167,6 @@
 
             </div>
             <div id="Portfolio__page" class="Portfolio__page  tabcontent">
-
             </div>
             <div id="blog__page" class="blog__page  tabcontent">
 

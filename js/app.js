@@ -88,21 +88,13 @@ document.getElementById("defaultOpen").click();
 
 
 function menuOpen() {
-  let menuOpen = document.getElementById("menu__open")
-  let divIcons = document.getElementById("divIcons")
-  let x=document.getElementById("xIcons")
-  menuOpen.style.transform= 'translateX(0)'
-  menuOpen.style.backgroundColor="black"
-  divIcons.style.display="none"
-  x.style.display="block"
+ let left =document.querySelector('.left')
+ left.classList.toggle('menu__open__noActive')
+ left.classList.toggle('menu__open__active')
+document.querySelector('.bir').classList.toggle('bir_x')
+document.querySelector('.ikki').classList.toggle('ikki_x')
+document.querySelector('.mobil').classList.toggle("black")
+document.querySelector('.mobil').classList.toggle("transparent")
 }
-function menuClose() {
-  let menuOpen = document.getElementById("menu__open")
-  let divIcons = document.getElementById("divIcons")
-  let x=document.getElementById("xIcons")
-  menuOpen.style.transform= 'translateX(-400px)'
-  menuOpen.style.backgroundColor="black"
-  divIcons.style.display="block"
-  x.style.display="none"
-}
+
 
