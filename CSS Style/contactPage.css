@@ -85,13 +85,16 @@ textarea{
 }
 
 .contact__me i{
-    color: #00A3E1;
+ color:white;
     font-size: 55px;
     padding-bottom: 10px;
 }
-.contact__me h2{
+.contact__me h3{
     color: white;
 }
+/* .contact__me .fa-instagram{
+  color:red;
+} */
 
 
 

@@ -77,7 +77,6 @@ body{
     background:url('../image/SherozPortfolio.jpg');
     background-position: center;
     background-size: cover;
-    border-radius: 50%;
     text-align:center;
     color: white;  
     display: flex;
